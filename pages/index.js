@@ -1,13 +1,19 @@
-import React from "react";
-import Navigation from "../components/navigations.js";
+import Head from "next/head";
+import Container from "../components/Container";
 
 const Index = () => {
   return (
-    <div>
-      <Navigation />
+    <Container>
+      <Head>
+        <title>Home</title>
+      </Head>
       <h1>Index</h1>
-    </div>
+    </Container>
   );
 };
+
+Index.getInitialProps =(ctx)=>{
+    
+}
 
 export default Index;
